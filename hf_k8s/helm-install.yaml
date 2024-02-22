@@ -1,0 +1,481 @@
+chart:
+  files:
+  - data: IyBQYXR0ZXJucyB0byBpZ25vcmUgd2hlbiBidWlsZGluZyBwYWNrYWdlcy4KIyBUaGlzIHN1cHBvcnRzIHNoZWxsIGdsb2IgbWF0Y2hpbmcsIHJlbGF0aXZlIHBhdGggbWF0Y2hpbmcsIGFuZAojIG5lZ2F0aW9uIChwcmVmaXhlZCB3aXRoICEpLiBPbmx5IG9uZSBwYXR0ZXJuIHBlciBsaW5lLgouRFNfU3RvcmUKIyBDb21tb24gVkNTIGRpcnMKLmdpdC8KLmdpdGlnbm9yZQouYnpyLwouYnpyaWdub3JlCi5oZy8KLmhnaWdub3JlCi5zdm4vCiMgQ29tbW9uIGJhY2t1cCBmaWxlcwoqLnN3cAoqLmJhawoqLnRtcAoqLm9yaWcKKn4KIyBWYXJpb3VzIElERXMKLnByb2plY3QKLmlkZWEvCioudG1wcm9qCi52c2NvZGUvCg==
+    name: .helmignore
+  - data: IyBDb3B5cmlnaHQgKGMpIDIwMjMgSW50ZWwgQ29ycG9yYXRpb24KIwojIExpY2Vuc2VkIHVuZGVyIHRoZSBBcGFjaGUgTGljZW5zZSwgVmVyc2lvbiAyLjAgKHRoZSAiTGljZW5zZSIpOwojIHlvdSBtYXkgbm90IHVzZSB0aGlzIGZpbGUgZXhjZXB0IGluIGNvbXBsaWFuY2Ugd2l0aCB0aGUgTGljZW5zZS4KIyBZb3UgbWF5IG9idGFpbiBhIGNvcHkgb2YgdGhlIExpY2Vuc2UgYXQKIwojICAgIGh0dHA6Ly93d3cuYXBhY2hlLm9yZy9saWNlbnNlcy9MSUNFTlNFLTIuMAojCiMgVW5sZXNzIHJlcXVpcmVkIGJ5IGFwcGxpY2FibGUgbGF3IG9yIGFncmVlZCB0byBpbiB3cml0aW5nLCBzb2Z0d2FyZQojIGRpc3RyaWJ1dGVkIHVuZGVyIHRoZSBMaWNlbnNlIGlzIGRpc3RyaWJ1dGVkIG9uIGFuICJBUyBJUyIgQkFTSVMsCiMgV0lUSE9VVCBXQVJSQU5USUVTIE9SIENPTkRJVElPTlMgT0YgQU5ZIEtJTkQsIGVpdGhlciBleHByZXNzIG9yIGltcGxpZWQuCiMgU2VlIHRoZSBMaWNlbnNlIGZvciB0aGUgc3BlY2lmaWMgbGFuZ3VhZ2UgZ292ZXJuaW5nIHBlcm1pc3Npb25zIGFuZAojIGxpbWl0YXRpb25zIHVuZGVyIHRoZSBMaWNlbnNlLgojCiMgU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IEFwYWNoZS0yLjAKCgptZXRhZGF0YToKICBuYW1lOiBmaW5hbmNpYWwtY2hhdGJvdAogIG5hbWVzcGFjZToga3ViZWZsb3cKCnNlY3JldDoKICBlbmNvZGVkVG9rZW46CgppbWFnZToKIG5hbWU6IGludGVsL2FpLXdvcmtmbG93cyAgIyBTcGVjaWZ5IHRoZSBpbWFnZSBuYW1lIHRoYXQgd2FzIHB1c2hlZCB0byBkb2NrZXIgaHViIG9yIGNvcGllZCB0byB0aGUgbm9kZXMKIHRhZzogdG9yY2gtMi4wLjEtaHVnZ2luZ2ZhY2UtbXVsdGlub2RlLXB5My45ICAjIFNwZWNpZnkgdGhlIGltYWdlIHRhZyB0aGF0IHdhcyBwdXNoZWQgdG8gZG9ja2VyIGh1YiBvciBjb3BpZWQgdG8gdGhlIG5vZGVzCiBwdWxsUG9saWN5OiBJZk5vdFByZXNlbnQKCmVsYXN0aWNQb2xpY3k6CiAgcmR6dkJhY2tlbmQ6IGMxMGQKICBtaW5SZXBsaWNhczogMQogIG1heFJlcGxpY2FzOiA0ICAjIE11c3QgYmUgZ3JlYXRlciB0aGFuIG9yIGVxdWFsIHRvIHRoZSBudW1iZXIgb2YgZGlzdHJpYnV0ZWQud29ya2VycwogIG1heFJlc3RhcnRzOiAzMAoKZGlzdHJpYnV0ZWQ6CiAgd29ya2VyczogNAogIHNjcmlwdDogL3dvcmtzcGFjZS9zY3JpcHRzL2ZpbmV0dW5lLnB5CiAgbW9kZWxOYW1lT3JQYXRoOiBtZXRhLWxsYW1hL0xsYW1hLTItN2ItY2hhdC1oZgogIGxvZ0xldmVsOiBpbmZvCgogIGRvVHJhaW46IFRydWUKICBkb0V2YWw6IFRydWUKICBkb0JlbmNobWFyazogRmFsc2UKICBkb1F1YW50aXplOiBGYWxzZQoKICB0cmFpbjoKICAgIGRhdGFzZXROYW1lOiAjIE5hbWUgb2YgdGhlIEh1Z2dpbmcgRmFjZSBkYXRhc2V0IHRvIHVzZS4gTGVhdmUgYmxhbmsgaWYgdXNpbmcgYSBkYXRhIGZpbGUKICAgIGRhdGFGaWxlOiAvdG1wL3B2Yy1tb3VudC9kYXRhc2V0L2ZpbmFuY2lhbC1hbHBhY2EuanNvbiAjIFBhdGggdG8gYSBkYXRhc2V0IGZpbGUuIExlYXZlIGJsYW5rIGlmIHVzaW5nIGEgSHVnZ2luZyBGYWNlIGRhdGFzZXQuCiAgICBkYXRhc2V0Q29uY2F0ZW5hdGlvbjogVHJ1ZQogICAgcHJvbXB0V2l0aElucHV0OiBZb3UgYXJlIGEgaGVscGZ1bCwgcmVzcGVjdGZ1bCBhbmQgaG9uZXN0IGZpbmFuY2UgYXNzaXN0YW50LiBBbHdheXMgYW5zd2VyIGFzIGhlbHBmdWxseSBhcyBwb3NzaWJsZSwgd2hpbGUgYmVpbmcgc2FmZS4gWW91ciBhbnN3ZXJzIHNob3VsZCBub3QgaW5jbHVkZSBhbnkgaGFybWZ1bCwgdW5ldGhpY2FsLCByYWNpc3QsIHNleGlzdCwgdG94aWMsIGRhbmdlcm91cywgb3IgaWxsZWdhbCBjb250ZW50LiBQbGVhc2UgZW5zdXJlIHRoYXQgeW91ciByZXNwb25zZXMgYXJlIHNvY2lhbGx5IHVuYmlhc2VkIGFuZCBwb3NpdGl2ZSBpbiBuYXR1cmUuIElmIGEgcXVlc3Rpb24gZG9lcyBub3QgbWFrZSBhbnkgc2Vuc2UsIG9yIGlzIG5vdCBmYWN0dWFsbHkgY29oZXJlbnQsIGV4cGxhaW4gd2h5IGluc3RlYWQgb2YgYW5zd2VyaW5nIHNvbWV0aGluZyBub3QgY29ycmVjdC4gSWYgeW91IGRvbid0IGtub3cgdGhlIGFuc3dlciB0byBhIHF1ZXN0aW9uLCBwbGVhc2UgZG9uJ3Qgc2hhcmUgZmFsc2UgaW5mb3JtYXRpb24uCiAgICBwcm9tcHRXaXRob3V0SW5wdXQ6IFlvdSBhcmUgYSBoZWxwZnVsLCByZXNwZWN0ZnVsIGFuZCBob25lc3QgZmluYW5jZSBhc3Npc3RhbnQuIEFsd2F5cyBhbnN3ZXIgYXMgaGVscGZ1bGx5IGFzIHBvc3NpYmxlLCB3aGlsZSBiZWluZyBzYWZlLiBZb3VyIGFuc3dlcnMgc2hvdWxkIG5vdCBpbmNsdWRlIGFueSBoYXJtZnVsLCB1bmV0aGljYWwsIHJhY2lzdCwgc2V4aXN0LCB0b3hpYywgZGFuZ2Vyb3VzLCBvciBpbGxlZ2FsIGNvbnRlbnQuIFBsZWFzZSBlbnN1cmUgdGhhdCB5b3VyIHJlc3BvbnNlcyBhcmUgc29jaWFsbHkgdW5iaWFzZWQgYW5kIHBvc2l0aXZlIGluIG5hdHVyZS4gSWYgYSBxdWVzdGlvbiBkb2VzIG5vdCBtYWtlIGFueSBzZW5zZSwgb3IgaXMgbm90IGZhY3R1YWxseSBjb2hlcmVudCwgZXhwbGFpbiB3aHkgaW5zdGVhZCBvZiBhbnN3ZXJpbmcgc29tZXRoaW5nIG5vdCBjb3JyZWN0LiBJZiB5b3UgZG9uJ3Qga25vdyB0aGUgYW5zd2VyIHRvIGEgcXVlc3Rpb24sIHBsZWFzZSBkb24ndCBzaGFyZSBmYWxzZSBpbmZvcm1hdGlvbi4KICAgIHBlckRldmljZUJhdGNoU2l6ZTogOAogICAgZXBvY2hzOiAzCiAgICBtYXhTdGVwczogLTEKICAgIGdyYWRpZW50QWNjdW11bGF0aW9uU3RlcHM6IDEKICAgIGxlYXJuaW5nUmF0ZTogMmUtNAogICAgZGRwRmluZFVudXNlZFBhcmFtZXRlcnM6IEZhbHNlCiAgICBkZHBCYWNrZW5kOiBjY2wKICAgIHVzZUZhc3RUb2tlbml6ZXI6IEZhbHNlCiAgICBvdXRwdXREaXI6IC90bXAvcHZjLW1vdW50L291dHB1dC9zYXZlZF9tb2RlbAogICAgbG9nZ2luZ1N0ZXBzOiAxMAogICAgc2F2ZVRvdGFsTGltaXQ6IDIKICAgIHNhdmVTdHJhdGVneTogZXBvY2gKICAgIHVzZUxvcmE6IFRydWUKICAgIGxvcmFSYW5rOiA4CiAgICBsb3JhQWxwaGE6IDE2CiAgICBsb3JhRHJvcG91dDogMC4xCiAgICBsb3JhVGFyZ2V0TW9kdWxlczogcV9wcm9qIHZwcm9qCiAgICBub0N1ZGE6IFRydWUKICAgIG92ZXJ3cml0ZU91dHB1dERpcjogVHJ1ZQogICAgYmYxNjogVHJ1ZQogICAgdXNlSXBleDogVHJ1ZQogIGV2YWw6CiAgICBwZXJEZXZpY2VCYXRjaFNpemU6IDgKICAgIHZhbGlkYXRpb25TcGxpdFBlcmNlbnRhZ2U6IDAuMgogIGJlbmNobWFyazoKICAgIHdhcm11cDogMzAKICAgIGl0ZXJhdGlvbnM6IDMwMAogICAgY29yZXNQZXJJbnN0YW5jZTogLTEKICAgIG51bUluc3RhbmNlczogMQogIHF1YW50aXplOgogICAgcGVmdE1vZGVsRGlyOiAvdG1wL3B2Yy1tb3VudC9vdXRwdXQvc2F2ZWRfbW9kZWwgICMgSWYgdHJhaW5pbmcsIHNldCB0aGlzIHRvIHRoZSB0cmFpbi5vdXRwdXREaXIgdG8gcXVhbnRpemUgdGhlIHRyYWluZWQgbW9kZWwKICAgIG91dHB1dERpcjogL3RtcC9wdmMtbW91bnQvb3V0cHV0L3F1YW50aXplZF9tb2RlbAogICAgd29xQml0czogOAogICAgd29xR3JvdXBTaXplOiAtMQogICAgd29xU2NoZW1lOiBzeW0KICAgIHdvcUFsZ286IFJUTgoKZW52VmFyczoKICBsZFByZWxvYWQ6IC91c3IvbGliL3g4Nl82NC1saW51eC1nbnUvbGlidGNtYWxsb2Muc28uNC41Ljk6L3Vzci9sb2NhbC9saWIvbGliaW9tcDUuc28KICBsb2dMZXZlbDogSU5GTwogIHRyYW5zZm9ybWVyc0NhY2hlOiAvdG1wL3B2Yy1tb3VudC90cmFuc2Zvcm1lcnNfY2FjaGUKICBoZkRhdGFzZXRzQ2FjaGU6IC90bXAvcHZjLW1vdW50L2hmX2RhdGFzZXRfY2FjaGUKICBjY2xXb3JrZXJDb3VudDogMQogIGh0dHBQcm94eToKICBodHRwc1Byb3h5OgogIG5vUHJveHk6CiAgZnRwUHJveHk6CiAgc29ja3NQcm94eToKCiMgUmVzb3VyY2VzIGFsbG9jYXRlZCB0byBlYWNoIHdvcmtlcgpyZXNvdXJjZXM6CiAgY3B1UmVxdWVzdDoKICBjcHVMaW1pdDoKICBtZW1vcnlSZXF1ZXN0OgogIG1lbW9yeUxpbWl0OgogIG5vZGVTZWxlY3RvckxhYmVsOgogIG5vZGVTZWxlY3RvclZhbHVlOgoKIyBQZXJzaXN0ZW50IHZvbHVtZSBjbGFpbSBzdG9yYWdlIHJlc291cmNlcwpzdG9yYWdlOgogIHN0b3JhZ2VDbGFzc05hbWU6IG5mcy1jbGllbnQKICByZXNvdXJjZXM6IDUwR2kKICBwdmNNb3VudFBhdGg6IC90bXAvcHZjLW1vdW50Cg==
+    name: financial_chatbot_values.yaml
+  - data: IyBDb3B5cmlnaHQgKGMpIDIwMjMgSW50ZWwgQ29ycG9yYXRpb24KIwojIExpY2Vuc2VkIHVuZGVyIHRoZSBBcGFjaGUgTGljZW5zZSwgVmVyc2lvbiAyLjAgKHRoZSAiTGljZW5zZSIpOwojIHlvdSBtYXkgbm90IHVzZSB0aGlzIGZpbGUgZXhjZXB0IGluIGNvbXBsaWFuY2Ugd2l0aCB0aGUgTGljZW5zZS4KIyBZb3UgbWF5IG9idGFpbiBhIGNvcHkgb2YgdGhlIExpY2Vuc2UgYXQKIwojICAgIGh0dHA6Ly93d3cuYXBhY2hlLm9yZy9saWNlbnNlcy9MSUNFTlNFLTIuMAojCiMgVW5sZXNzIHJlcXVpcmVkIGJ5IGFwcGxpY2FibGUgbGF3IG9yIGFncmVlZCB0byBpbiB3cml0aW5nLCBzb2Z0d2FyZQojIGRpc3RyaWJ1dGVkIHVuZGVyIHRoZSBMaWNlbnNlIGlzIGRpc3RyaWJ1dGVkIG9uIGFuICJBUyBJUyIgQkFTSVMsCiMgV0lUSE9VVCBXQVJSQU5USUVTIE9SIENPTkRJVElPTlMgT0YgQU5ZIEtJTkQsIGVpdGhlciBleHByZXNzIG9yIGltcGxpZWQuCiMgU2VlIHRoZSBMaWNlbnNlIGZvciB0aGUgc3BlY2lmaWMgbGFuZ3VhZ2UgZ292ZXJuaW5nIHBlcm1pc3Npb25zIGFuZAojIGxpbWl0YXRpb25zIHVuZGVyIHRoZSBMaWNlbnNlLgojCiMgU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IEFwYWNoZS0yLjAKCgptZXRhZGF0YToKICBuYW1lOiBtZWRpY2FsLW1lYWRvdwogIG5hbWVzcGFjZToga3ViZWZsb3cKCnNlY3JldDoKICBlbmNvZGVkVG9rZW46CgppbWFnZToKIG5hbWU6IGludGVsL2FpLXdvcmtmbG93cyAgIyBTcGVjaWZ5IHRoZSBpbWFnZSBuYW1lIHRoYXQgd2FzIHB1c2hlZCB0byBkb2NrZXIgaHViIG9yIGNvcGllZCB0byB0aGUgbm9kZXMKIHRhZzogdG9yY2gtMi4wLjEtaHVnZ2luZ2ZhY2UtbXVsdGlub2RlLXB5My45ICAjIFNwZWNpZnkgdGhlIGltYWdlIHRhZyB0aGF0IHdhcyBwdXNoZWQgdG8gZG9ja2VyIGh1YiBvciBjb3BpZWQgdG8gdGhlIG5vZGVzCiBwdWxsUG9saWN5OiBJZk5vdFByZXNlbnQKCmVsYXN0aWNQb2xpY3k6CiAgcmR6dkJhY2tlbmQ6IGMxMGQKICBtaW5SZXBsaWNhczogMQogIG1heFJlcGxpY2FzOiA0ICAjIE11c3QgYmUgZ3JlYXRlciB0aGFuIG9yIGVxdWFsIHRvIHRoZSBudW1iZXIgb2YgZGlzdHJpYnV0ZWQud29ya2VycwogIG1heFJlc3RhcnRzOiAzMAoKZGlzdHJpYnV0ZWQ6CiAgd29ya2VyczogNAogIHNjcmlwdDogL3dvcmtzcGFjZS9zY3JpcHRzL2ZpbmV0dW5lLnB5CiAgbW9kZWxOYW1lT3JQYXRoOiBtZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYKICBsb2dMZXZlbDogaW5mbwoKICBkb1RyYWluOiBUcnVlCiAgZG9FdmFsOiBUcnVlCiAgZG9CZW5jaG1hcms6IEZhbHNlCiAgZG9RdWFudGl6ZTogRmFsc2UKCiAgdHJhaW46CiAgICBkYXRhc2V0TmFtZTogbWVkYWxwYWNhL21lZGljYWxfbWVhZG93X21lZGljYWxfZmxhc2hjYXJkcyAgIyBOYW1lIG9mIHRoZSBIdWdnaW5nIEZhY2UgZGF0YXNldCB0byB1c2UuIExlYXZlIGJsYW5rIGlmIHVzaW5nIGEgZGF0YSBmaWxlCiAgICBkYXRhRmlsZTogICMgUGF0aCB0byBhIGRhdGFzZXQgZmlsZS4gTGVhdmUgYmxhbmsgaWYgdXNpbmcgYSBIdWdnaW5nIEZhY2UgZGF0YXNldC4KICAgIGRhdGFzZXRDb25jYXRlbmF0aW9uOiBUcnVlCiAgICBwcm9tcHRXaXRoSW5wdXQ6IEJlbG93IGlzIGFuIGluc3RydWN0aW9uIHRoYXQgZGVzY3JpYmVzIGEgdGFzaywgcGFpcmVkIHdpdGggYW4gaW5wdXQgdGhhdCBwcm92aWRlcyBmdXJ0aGVyIGNvbnRleHQuIFdyaXRlIGEgcmVzcG9uc2UgdGhhdCBhcHByb3ByaWF0ZWx5IGNvbXBsZXRlcyB0aGUgcmVxdWVzdC4KICAgIHByb21wdFdpdGhvdXRJbnB1dDogQmVsb3cgaXMgYW4gaW5zdHJ1Y3Rpb24gdGhhdCBkZXNjcmliZXMgYSB0YXNrLiBXcml0ZSBhIHJlc3BvbnNlIHRoYXQgYXBwcm9wcmlhdGVseSBjb21wbGV0ZXMgdGhlIHJlcXVlc3QuCiAgICBwZXJEZXZpY2VCYXRjaFNpemU6IDgKICAgIGVwb2NoczogMwogICAgbWF4U3RlcHM6IC0xCiAgICBncmFkaWVudEFjY3VtdWxhdGlvblN0ZXBzOiAxCiAgICBsZWFybmluZ1JhdGU6IDJlLTUKICAgIGRkcEZpbmRVbnVzZWRQYXJhbWV0ZXJzOiBGYWxzZQogICAgZGRwQmFja2VuZDogY2NsCiAgICB1c2VGYXN0VG9rZW5pemVyOiBGYWxzZQogICAgb3V0cHV0RGlyOiAvdG1wL3B2Yy1tb3VudC9vdXRwdXQvc2F2ZWRfbW9kZWwKICAgIGxvZ2dpbmdTdGVwczogMTAKICAgIHNhdmVUb3RhbExpbWl0OiAyCiAgICBzYXZlU3RyYXRlZ3k6IGVwb2NoCiAgICB1c2VMb3JhOiBUcnVlCiAgICBsb3JhUmFuazogOAogICAgbG9yYUFscGhhOiAxNgogICAgbG9yYURyb3BvdXQ6IDAuMQogICAgbG9yYVRhcmdldE1vZHVsZXM6IHFfcHJvaiB2cHJvagogICAgbm9DdWRhOiBUcnVlCiAgICBvdmVyd3JpdGVPdXRwdXREaXI6IFRydWUKICAgIGJmMTY6IFRydWUKICAgIHVzZUlwZXg6IFRydWUKICBldmFsOgogICAgcGVyRGV2aWNlQmF0Y2hTaXplOiA4CiAgICB2YWxpZGF0aW9uU3BsaXRQZXJjZW50YWdlOiAwLjIKICBiZW5jaG1hcms6CiAgICB3YXJtdXA6IDMwCiAgICBpdGVyYXRpb25zOiAzMDAKICAgIGNvcmVzUGVySW5zdGFuY2U6IC0xCiAgICBudW1JbnN0YW5jZXM6IDEKICBxdWFudGl6ZToKICAgIHBlZnRNb2RlbERpcjogL3RtcC9wdmMtbW91bnQvb3V0cHV0L3NhdmVkX21vZGVsICAjIElmIHRyYWluaW5nLCBzZXQgdGhpcyB0byB0aGUgdHJhaW4ub3V0cHV0RGlyIHRvIHF1YW50aXplIHRoZSB0cmFpbmVkIG1vZGVsCiAgICBvdXRwdXREaXI6IC90bXAvcHZjLW1vdW50L291dHB1dC9xdWFudGl6ZWRfbW9kZWwKICAgIHdvcUJpdHM6IDgKICAgIHdvcUdyb3VwU2l6ZTogLTEKICAgIHdvcVNjaGVtZTogc3ltCiAgICB3b3FBbGdvOiBSVE4KCmVudlZhcnM6CiAgbGRQcmVsb2FkOiAvdXNyL2xpYi94ODZfNjQtbGludXgtZ251L2xpYnRjbWFsbG9jLnNvLjQuNS45Oi91c3IvbG9jYWwvbGliL2xpYmlvbXA1LnNvCiAgbG9nTGV2ZWw6IElORk8KICB0cmFuc2Zvcm1lcnNDYWNoZTogL3RtcC9wdmMtbW91bnQvdHJhbnNmb3JtZXJzX2NhY2hlCiAgaGZEYXRhc2V0c0NhY2hlOiAvdG1wL3B2Yy1tb3VudC9oZl9kYXRhc2V0X2NhY2hlCiAgY2NsV29ya2VyQ291bnQ6IDEKICBodHRwUHJveHk6CiAgaHR0cHNQcm94eToKICBub1Byb3h5OgogIGZ0cFByb3h5OgogIHNvY2tzUHJveHk6CgojIFJlc291cmNlcyBhbGxvY2F0ZWQgdG8gZWFjaCB3b3JrZXIKcmVzb3VyY2VzOgogIGNwdVJlcXVlc3Q6IDIwMCAgICAgICAgICAgICAgICAgIyBVcGRhdGUgYmFzZWQgb24geW91ciBoYXJkd2FyZSBjb25maWcKICBjcHVMaW1pdDogMjAwCiAgbWVtb3J5UmVxdWVzdDogMjI2R2kKICBtZW1vcnlMaW1pdDogMjI2R2kKICBub2RlU2VsZWN0b3JMYWJlbDogbm9kZS10eXBlICAgICMgVXBkYXRlIHdpdGggeW91ciBub2RlIGxhYmVsL3ZhbHVlCiAgbm9kZVNlbGVjdG9yVmFsdWU6IHNwcgoKIyBQZXJzaXN0ZW50IHZvbHVtZSBjbGFpbSBzdG9yYWdlIHJlc291cmNlcwpzdG9yYWdlOgogIHN0b3JhZ2VDbGFzc05hbWU6IG5mcy1jbGllbnQgICAgICMgVXBkYXRlIHdpdGggeW91ciBjbHVzdGVyJ3Mgc3RvcmFnZSBjbGFzcyBuYW1lCiAgcmVzb3VyY2VzOiA1MEdpCiAgcHZjTW91bnRQYXRoOiAvdG1wL3B2Yy1tb3VudA==
+    name: medical_meadow_values.yaml
+  lock: null
+  metadata:
+    apiVersion: v2
+    appVersion: 1.16.0
+    description: This Helm chart deploys a distributed training job using the Kubeflow
+      PyTorchJob training operator.
+    name: Hugging Face PyTorch Distributed Training
+    type: application
+    version: 0.2.0
+  schema: null
+  templates:
+  - data: IyBDb3B5cmlnaHQgKGMpIDIwMjMgSW50ZWwgQ29ycG9yYXRpb24KIwojIExpY2Vuc2VkIHVuZGVyIHRoZSBBcGFjaGUgTGljZW5zZSwgVmVyc2lvbiAyLjAgKHRoZSAiTGljZW5zZSIpOwojIHlvdSBtYXkgbm90IHVzZSB0aGlzIGZpbGUgZXhjZXB0IGluIGNvbXBsaWFuY2Ugd2l0aCB0aGUgTGljZW5zZS4KIyBZb3UgbWF5IG9idGFpbiBhIGNvcHkgb2YgdGhlIExpY2Vuc2UgYXQKIwojICAgIGh0dHA6Ly93d3cuYXBhY2hlLm9yZy9saWNlbnNlcy9MSUNFTlNFLTIuMAojCiMgVW5sZXNzIHJlcXVpcmVkIGJ5IGFwcGxpY2FibGUgbGF3IG9yIGFncmVlZCB0byBpbiB3cml0aW5nLCBzb2Z0d2FyZQojIGRpc3RyaWJ1dGVkIHVuZGVyIHRoZSBMaWNlbnNlIGlzIGRpc3RyaWJ1dGVkIG9uIGFuICJBUyBJUyIgQkFTSVMsCiMgV0lUSE9VVCBXQVJSQU5USUVTIE9SIENPTkRJVElPTlMgT0YgQU5ZIEtJTkQsIGVpdGhlciBleHByZXNzIG9yIGltcGxpZWQuCiMgU2VlIHRoZSBMaWNlbnNlIGZvciB0aGUgc3BlY2lmaWMgbGFuZ3VhZ2UgZ292ZXJuaW5nIHBlcm1pc3Npb25zIGFuZAojIGxpbWl0YXRpb25zIHVuZGVyIHRoZSBMaWNlbnNlLgojCiMgU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IEFwYWNoZS0yLjAKCgphcGlWZXJzaW9uOiB2MQpraW5kOiBQb2QKbWV0YWRhdGE6CiAgbmFtZToge3sgLlZhbHVlcy5tZXRhZGF0YS5uYW1lIH19LWRhdGFhY2Nlc3MKc3BlYzoKICBjb250YWluZXJzOgogIC0gbmFtZTogYWxwaW5lCiAgICBpbWFnZTogYWxwaW5lOmxhdGVzdAogICAgY29tbWFuZDogWydzbGVlcCcsICdpbmZpbml0eSddCiAgICBlbnY6CiAgICAgIC0gbmFtZTogTERfUFJFTE9BRAogICAgICAgIHZhbHVlOiAie3sgLlZhbHVlcy5lbnZWYXJzLmxkUHJlbG9hZCB9fSIKICAgICAgLSBuYW1lOiBodHRwX3Byb3h5CiAgICAgICAgdmFsdWU6ICJ7eyAuVmFsdWVzLmVudlZhcnMuaHR0cFByb3h5IH19IgogICAgICAtIG5hbWU6IGh0dHBzX3Byb3h5CiAgICAgICAgdmFsdWU6ICJ7eyAuVmFsdWVzLmVudlZhcnMuaHR0cHNQcm94eSB9fSIKICAgICAgLSBuYW1lOiBub19wcm94eQogICAgICAgIHZhbHVlOiAie3sgLlZhbHVlcy5lbnZWYXJzLm5vUHJveHkgfX0iCiAgICAgIC0gbmFtZTogZnRwX3Byb3h5CiAgICAgICAgdmFsdWU6ICJ7eyAuVmFsdWVzLmVudlZhcnMuZnRwUHJveHkgfX0iCiAgICAgIC0gbmFtZTogc29ja3NfcHJveHkKICAgICAgICB2YWx1ZTogInt7IC5WYWx1ZXMuZW52VmFycy5zb2Nrc1Byb3h5IH19IgogICAgdm9sdW1lTW91bnRzOgogICAgLSBuYW1lOiBwdmMtdm9sdW1lCiAgICAgIG1vdW50UGF0aDoge3sgLlZhbHVlcy5zdG9yYWdlLnB2Y01vdW50UGF0aCB9fQogIHZvbHVtZXM6CiAgLSBuYW1lOiBwdmMtdm9sdW1lCiAgICBwZXJzaXN0ZW50Vm9sdW1lQ2xhaW06CiAgICAgIGNsYWltTmFtZToge3sgLlZhbHVlcy5tZXRhZGF0YS5uYW1lIH19LXB2Ywo=
+    name: templates/dataaccess.yaml
+  - data: IyBDb3B5cmlnaHQgKGMpIDIwMjMgSW50ZWwgQ29ycG9yYXRpb24KIwojIExpY2Vuc2VkIHVuZGVyIHRoZSBBcGFjaGUgTGljZW5zZSwgVmVyc2lvbiAyLjAgKHRoZSAiTGljZW5zZSIpOwojIHlvdSBtYXkgbm90IHVzZSB0aGlzIGZpbGUgZXhjZXB0IGluIGNvbXBsaWFuY2Ugd2l0aCB0aGUgTGljZW5zZS4KIyBZb3UgbWF5IG9idGFpbiBhIGNvcHkgb2YgdGhlIExpY2Vuc2UgYXQKIwojICAgIGh0dHA6Ly93d3cuYXBhY2hlLm9yZy9saWNlbnNlcy9MSUNFTlNFLTIuMAojCiMgVW5sZXNzIHJlcXVpcmVkIGJ5IGFwcGxpY2FibGUgbGF3IG9yIGFncmVlZCB0byBpbiB3cml0aW5nLCBzb2Z0d2FyZQojIGRpc3RyaWJ1dGVkIHVuZGVyIHRoZSBMaWNlbnNlIGlzIGRpc3RyaWJ1dGVkIG9uIGFuICJBUyBJUyIgQkFTSVMsCiMgV0lUSE9VVCBXQVJSQU5USUVTIE9SIENPTkRJVElPTlMgT0YgQU5ZIEtJTkQsIGVpdGhlciBleHByZXNzIG9yIGltcGxpZWQuCiMgU2VlIHRoZSBMaWNlbnNlIGZvciB0aGUgc3BlY2lmaWMgbGFuZ3VhZ2UgZ292ZXJuaW5nIHBlcm1pc3Npb25zIGFuZAojIGxpbWl0YXRpb25zIHVuZGVyIHRoZSBMaWNlbnNlLgojCiMgU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IEFwYWNoZS0yLjAKCgphcGlWZXJzaW9uOiB2MQpraW5kOiBQZXJzaXN0ZW50Vm9sdW1lQ2xhaW0KbWV0YWRhdGE6CiAgbmFtZToge3sgLlZhbHVlcy5tZXRhZGF0YS5uYW1lIH19LXB2YwogIG5hbWVzcGFjZToge3sgLlZhbHVlcy5tZXRhZGF0YS5uYW1lc3BhY2UgfX0Kc3BlYzoKICBzdG9yYWdlQ2xhc3NOYW1lOiB7eyAuVmFsdWVzLnN0b3JhZ2Uuc3RvcmFnZUNsYXNzTmFtZSB9fQogIGFjY2Vzc01vZGVzOgogICAgLSAiUmVhZFdyaXRlTWFueSIKICByZXNvdXJjZXM6CiAgICByZXF1ZXN0czoKICAgICAgc3RvcmFnZToge3sgLlZhbHVlcy5zdG9yYWdlLnJlc291cmNlcyB9fQo=
+    name: templates/pvc.yaml
+  - data: IyBDb3B5cmlnaHQgKGMpIDIwMjMgSW50ZWwgQ29ycG9yYXRpb24KIwojIExpY2Vuc2VkIHVuZGVyIHRoZSBBcGFjaGUgTGljZW5zZSwgVmVyc2lvbiAyLjAgKHRoZSAiTGljZW5zZSIpOwojIHlvdSBtYXkgbm90IHVzZSB0aGlzIGZpbGUgZXhjZXB0IGluIGNvbXBsaWFuY2Ugd2l0aCB0aGUgTGljZW5zZS4KIyBZb3UgbWF5IG9idGFpbiBhIGNvcHkgb2YgdGhlIExpY2Vuc2UgYXQKIwojICAgIGh0dHA6Ly93d3cuYXBhY2hlLm9yZy9saWNlbnNlcy9MSUNFTlNFLTIuMAojCiMgVW5sZXNzIHJlcXVpcmVkIGJ5IGFwcGxpY2FibGUgbGF3IG9yIGFncmVlZCB0byBpbiB3cml0aW5nLCBzb2Z0d2FyZQojIGRpc3RyaWJ1dGVkIHVuZGVyIHRoZSBMaWNlbnNlIGlzIGRpc3RyaWJ1dGVkIG9uIGFuICJBUyBJUyIgQkFTSVMsCiMgV0lUSE9VVCBXQVJSQU5USUVTIE9SIENPTkRJVElPTlMgT0YgQU5ZIEtJTkQsIGVpdGhlciBleHByZXNzIG9yIGltcGxpZWQuCiMgU2VlIHRoZSBMaWNlbnNlIGZvciB0aGUgc3BlY2lmaWMgbGFuZ3VhZ2UgZ292ZXJuaW5nIHBlcm1pc3Npb25zIGFuZAojIGxpbWl0YXRpb25zIHVuZGVyIHRoZSBMaWNlbnNlLgojCiMgU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IEFwYWNoZS0yLjAKCgphcGlWZXJzaW9uOiAia3ViZWZsb3cub3JnL3YxIgpraW5kOiBQeVRvcmNoSm9iCm1ldGFkYXRhOgogIG5hbWU6IHt7IC5WYWx1ZXMubWV0YWRhdGEubmFtZSB9fS1weXRvcmNoam9iCiAgbmFtZXNwYWNlOiB7eyAuVmFsdWVzLm1ldGFkYXRhLm5hbWVzcGFjZSB9fQpzcGVjOgogIGVsYXN0aWNQb2xpY3k6CiAgICByZHp2QmFja2VuZDoge3sgLlZhbHVlcy5lbGFzdGljUG9saWN5LnJkenZCYWNrZW5kIH19CiAgICBtaW5SZXBsaWNhczoge3sgLlZhbHVlcy5lbGFzdGljUG9saWN5Lm1pblJlcGxpY2FzIH19CiAgICBtYXhSZXBsaWNhczoge3sgLlZhbHVlcy5lbGFzdGljUG9saWN5Lm1heFJlcGxpY2FzIH19CiAgICBtYXhSZXN0YXJ0czoge3sgLlZhbHVlcy5lbGFzdGljUG9saWN5Lm1heFJlc3RhcnRzIH19CiAgcHl0b3JjaFJlcGxpY2FTcGVjczoKICAgIFdvcmtlcjoKICAgICAgcmVwbGljYXM6IHt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQud29ya2VycyB9fQogICAgICByZXN0YXJ0UG9saWN5OiBPbkZhaWx1cmUKICAgICAgdGVtcGxhdGU6CiAgICAgICAgc3BlYzoKICAgICAgICAgIGNvbnRhaW5lcnM6CiAgICAgICAgICAgIC0gbmFtZTogcHl0b3JjaAogICAgICAgICAgICAgIGltYWdlOiB7eyAuVmFsdWVzLmltYWdlLm5hbWUgfX06e3sgLlZhbHVlcy5pbWFnZS50YWcgfX0KICAgICAgICAgICAgICBpbWFnZVB1bGxQb2xpY3k6IHt7IC5WYWx1ZXMuaW1hZ2UucHVsbFBvbGljeSB9fQogICAgICAgICAgICAgIGNvbW1hbmQ6CiAgICAgICAgICAgICAgICAtIHRvcmNocnVuCiAgICAgICAgICAgICAgICAtIHt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQuc2NyaXB0IH19CiAgICAgICAgICAgICAgICAtIC0tbW9kZWxfbmFtZV9vcl9wYXRoCiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLm1vZGVsTmFtZU9yUGF0aCB9fSIKICAgICAgICAgICAgICAgIC0gLS1kYXRhc2V0X25hbWUKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQudHJhaW4uZGF0YXNldE5hbWUgfX0iCiAgICAgICAgICAgICAgICAtIC0tZGF0YXNldF9jYWNoZV9kaXJlY3RvcnkKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZW52VmFycy5oZkRhdGFzZXRzQ2FjaGUgfX0iCiAgICAgICAgICAgICAgICAtIC0tdHJhaW5fZmlsZQogICAgICAgICAgICAgICAgLSAie3sgLlZhbHVlcy5kaXN0cmlidXRlZC50cmFpbi5kYXRhRmlsZSB9fSIKICAgICAgICAgICAgICAgIC0gLS1kYXRhc2V0X2NvbmNhdGVuYXRpb24KICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQudHJhaW4uZGF0YXNldENvbmNhdGVuYXRpb24gfX0iCiAgICAgICAgICAgICAgICAtIC0tcHJvbXB0X3dpdGhfaW5wdXQKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQudHJhaW4ucHJvbXB0V2l0aElucHV0IH19IgogICAgICAgICAgICAgICAgLSAtLXByb21wdF93aXRob3V0X2lucHV0CiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLnRyYWluLnByb21wdFdpdGhvdXRJbnB1dCB9fSIKICAgICAgICAgICAgICAgIC0gLS1wZXJfZGV2aWNlX3RyYWluX2JhdGNoX3NpemUKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQudHJhaW4ucGVyRGV2aWNlQmF0Y2hTaXplIH19IgogICAgICAgICAgICAgICAgLSAtLXBlcl9kZXZpY2VfZXZhbF9iYXRjaF9zaXplCiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLmV2YWwucGVyRGV2aWNlQmF0Y2hTaXplIH19IgogICAgICAgICAgICAgICAgLSAtLWdyYWRpZW50X2FjY3VtdWxhdGlvbl9zdGVwcwogICAgICAgICAgICAgICAgLSAie3sgLlZhbHVlcy5kaXN0cmlidXRlZC50cmFpbi5ncmFkaWVudEFjY3VtdWxhdGlvblN0ZXBzIH19IgogICAgICAgICAgICAgICAgLSAtLWxlYXJuaW5nX3JhdGUKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQudHJhaW4ubGVhcm5pbmdSYXRlIH19IgogICAgICAgICAgICAgICAgLSAtLW51bV90cmFpbl9lcG9jaHMKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQudHJhaW4uZXBvY2hzIH19IgogICAgICAgICAgICAgICAgLSAtLW1heF9zdGVwcwogICAgICAgICAgICAgICAgLSAie3sgLlZhbHVlcy5kaXN0cmlidXRlZC50cmFpbi5tYXhTdGVwcyB9fSIKICAgICAgICAgICAgICAgIC0gLS1sb2dnaW5nX3N0ZXBzCiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLnRyYWluLmxvZ2dpbmdTdGVwcyB9fSIKICAgICAgICAgICAgICAgIC0gLS1zYXZlX3RvdGFsX2xpbWl0CiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLnRyYWluLnNhdmVUb3RhbExpbWl0IH19IgogICAgICAgICAgICAgICAgLSAtLW91dHB1dF9kaXIKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQudHJhaW4ub3V0cHV0RGlyIH19IgogICAgICAgICAgICAgICAgLSAtLXZhbGlkYXRpb25fc3BsaXRfcGVyY2VudGFnZQogICAgICAgICAgICAgICAgLSAie3sgLlZhbHVlcy5kaXN0cmlidXRlZC5ldmFsLnZhbGlkYXRpb25TcGxpdFBlcmNlbnRhZ2UgfX0iCiAgICAgICAgICAgICAgICAtIC0tbG9nX2xldmVsCiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLmxvZ0xldmVsIH19IgogICAgICAgICAgICAgICAgLSAtLXNhdmVfc3RyYXRlZ3kKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQudHJhaW4uc2F2ZVN0cmF0ZWd5IH19IgogICAgICAgICAgICAgICAgLSAtLWRkcF9maW5kX3VudXNlZF9wYXJhbWV0ZXJzCiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLnRyYWluLmRkcEZpbmRVbnVzZWRQYXJhbWV0ZXJzIH19IgogICAgICAgICAgICAgICAgLSAtLWRkcF9iYWNrZW5kCiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLnRyYWluLmRkcEJhY2tlbmQgfX0iCiAgICAgICAgICAgICAgICAtIC0tdXNlX2Zhc3RfdG9rZW5pemVyCiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLnRyYWluLnVzZUZhc3RUb2tlbml6ZXIgfX0iCiAgICAgICAgICAgICAgICAtIC0tdXNlX2xvcmEKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQudHJhaW4udXNlTG9yYSB9fSIKICAgICAgICAgICAgICAgIC0gLS1sb3JhX3JhbmsKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQudHJhaW4ubG9yYVJhbmsgfX0iCiAgICAgICAgICAgICAgICAtIC0tbG9yYV9hbHBoYQogICAgICAgICAgICAgICAgLSAie3sgLlZhbHVlcy5kaXN0cmlidXRlZC50cmFpbi5sb3JhQWxwaGEgfX0iCiAgICAgICAgICAgICAgICAtIC0tbG9yYV9kcm9wb3V0CiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLnRyYWluLmxvcmFEcm9wb3V0IH19IgogICAgICAgICAgICAgICAgLSAtLWxvcmFfdGFyZ2V0X21vZHVsZXMKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQudHJhaW4ubG9yYVRhcmdldE1vZHVsZXMgfX0iCiAgICAgICAgICAgICAgICAtIC0tbm9fY3VkYQogICAgICAgICAgICAgICAgLSAie3sgLlZhbHVlcy5kaXN0cmlidXRlZC50cmFpbi5ub0N1ZGEgfX0iCiAgICAgICAgICAgICAgICAtIC0tb3ZlcndyaXRlX291dHB1dF9kaXIKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQudHJhaW4ub3ZlcndyaXRlT3V0cHV0RGlyIH19IgogICAgICAgICAgICAgICAgLSAtLWRvX3RyYWluCiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLmRvVHJhaW4gfX0iCiAgICAgICAgICAgICAgICAtIC0tZG9fZXZhbAogICAgICAgICAgICAgICAgLSAie3sgLlZhbHVlcy5kaXN0cmlidXRlZC5kb0V2YWwgfX0iCiAgICAgICAgICAgICAgICAtIC0tYmYxNgogICAgICAgICAgICAgICAgLSAie3sgLlZhbHVlcy5kaXN0cmlidXRlZC50cmFpbi5iZjE2IH19IgogICAgICAgICAgICAgICAgLSAtLXVzZV9pcGV4CiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLnRyYWluLnVzZUlwZXggfX0iCiAgICAgICAgICAgICAgICAtIC0tZG9fYmVuY2htYXJrCiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLmRvQmVuY2htYXJrIH19IgogICAgICAgICAgICAgICAgLSAtLWJlbmNobWFya193YXJtdXAKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQuYmVuY2htYXJrLndhcm11cCB9fSIKICAgICAgICAgICAgICAgIC0gLS1iZW5jaG1hcmtfaXRlcmF0aW9ucwogICAgICAgICAgICAgICAgLSAie3sgLlZhbHVlcy5kaXN0cmlidXRlZC5iZW5jaG1hcmsuaXRlcmF0aW9ucyB9fSIKICAgICAgICAgICAgICAgIC0gLS1iZW5jaG1hcmtfY29yZXNfcGVyX2luc3RhbmNlCiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLmJlbmNobWFyay5jb3Jlc1Blckluc3RhbmNlIH19IgogICAgICAgICAgICAgICAgLSAtLWJlbmNobWFya19udW1faW5zdGFuY2VzCiAgICAgICAgICAgICAgICAtICJ7eyAuVmFsdWVzLmRpc3RyaWJ1dGVkLmJlbmNobWFyay5udW1JbnN0YW5jZXMgfX0iCiAgICAgICAgICAgICAgICAtIC0tZG9fcXVhbnRpemUKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQuZG9RdWFudGl6ZSB9fSIKICAgICAgICAgICAgICAgIC0gLS1wZWZ0X21vZGVsX2RpcgogICAgICAgICAgICAgICAgLSAie3sgLlZhbHVlcy5kaXN0cmlidXRlZC5xdWFudGl6ZS5wZWZ0TW9kZWxEaXIgfX0iCiAgICAgICAgICAgICAgICAtIC0tcXVhbnRpemVfb3V0cHV0X2RpcgogICAgICAgICAgICAgICAgLSAie3sgLlZhbHVlcy5kaXN0cmlidXRlZC5xdWFudGl6ZS5vdXRwdXREaXIgfX0iCiAgICAgICAgICAgICAgICAtIC0td29xX2JpdHMKICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQucXVhbnRpemUud29xQml0cyB9fSIKICAgICAgICAgICAgICAgIC0gLS13b3FfZ3JvdXBfc2l6ZQogICAgICAgICAgICAgICAgLSAie3sgLlZhbHVlcy5kaXN0cmlidXRlZC5xdWFudGl6ZS53b3FHcm91cFNpemUgfX0iCiAgICAgICAgICAgICAgICAtIC0td29xX3NjaGVtZQogICAgICAgICAgICAgICAgLSAie3sgLlZhbHVlcy5kaXN0cmlidXRlZC5xdWFudGl6ZS53b3FTY2hlbWUgfX0iCiAgICAgICAgICAgICAgICAtIC0td29xX2FsZ28KICAgICAgICAgICAgICAgIC0gInt7IC5WYWx1ZXMuZGlzdHJpYnV0ZWQucXVhbnRpemUud29xQWxnbyB9fSIKICAgICAgICAgICAgICBlbnY6CiAgICAgICAgICAgICAge3stIGlmIC5WYWx1ZXMuZW52VmFycy5sZFByZWxvYWQgfX0KICAgICAgICAgICAgICAtIG5hbWU6IExEX1BSRUxPQUQKICAgICAgICAgICAgICAgIHZhbHVlOiAie3sgLlZhbHVlcy5lbnZWYXJzLmxkUHJlbG9hZCB9fSIKICAgICAgICAgICAgICB7ey0gZW5kIH19CiAgICAgICAgICAgICAge3stIGlmIC5WYWx1ZXMuZW52VmFycy5odHRwUHJveHkgfX0KICAgICAgICAgICAgICAtIG5hbWU6IGh0dHBfcHJveHkKICAgICAgICAgICAgICAgIHZhbHVlOiAie3sgLlZhbHVlcy5lbnZWYXJzLmh0dHBQcm94eSB9fSIKICAgICAgICAgICAgICB7ey0gZW5kIH19CiAgICAgICAgICAgICAge3stIGlmIC5WYWx1ZXMuZW52VmFycy5odHRwc1Byb3h5IH19CiAgICAgICAgICAgICAgLSBuYW1lOiBodHRwc19wcm94eQogICAgICAgICAgICAgICAgdmFsdWU6ICJ7eyAuVmFsdWVzLmVudlZhcnMuaHR0cHNQcm94eSB9fSIKICAgICAgICAgICAgICB7ey0gZW5kIH19CiAgICAgICAgICAgICAge3stIGlmIC5WYWx1ZXMuZW52VmFycy5ub1Byb3h5IH19CiAgICAgICAgICAgICAgLSBuYW1lOiBub19wcm94eQogICAgICAgICAgICAgICAgdmFsdWU6ICJ7eyAuVmFsdWVzLmVudlZhcnMubm9Qcm94eSB9fSIKICAgICAgICAgICAgICB7ey0gZW5kIH19CiAgICAgICAgICAgICAge3stIGlmIC5WYWx1ZXMuZW52VmFycy5mdHBQcm94eSB9fQogICAgICAgICAgICAgIC0gbmFtZTogZnRwX3Byb3h5CiAgICAgICAgICAgICAgICB2YWx1ZTogInt7IC5WYWx1ZXMuZW52VmFycy5mdHBQcm94eSB9fSIKICAgICAgICAgICAgICB7ey0gZW5kIH19CiAgICAgICAgICAgICAge3stIGlmIC5WYWx1ZXMuZW52VmFycy5zb2Nrc1Byb3h5IH19CiAgICAgICAgICAgICAgLSBuYW1lOiBzb2Nrc19wcm94eQogICAgICAgICAgICAgICAgdmFsdWU6ICJ7eyAuVmFsdWVzLmVudlZhcnMuc29ja3NQcm94eSB9fSIKICAgICAgICAgICAgICB7ey0gZW5kIH19CiAgICAgICAgICAgICAge3stIGlmIC5WYWx1ZXMuZW52VmFycy50cmFuc2Zvcm1lcnNDYWNoZSB9fQogICAgICAgICAgICAgIC0gbmFtZTogVFJBTlNGT1JNRVJTX0NBQ0hFCiAgICAgICAgICAgICAgICB2YWx1ZTogInt7IC5WYWx1ZXMuZW52VmFycy50cmFuc2Zvcm1lcnNDYWNoZSB9fSIKICAgICAgICAgICAgICB7ey0gZW5kIH19CiAgICAgICAgICAgICAge3stIGlmIC5WYWx1ZXMuZW52VmFycy5oZkRhdGFzZXRzQ2FjaGUgfX0KICAgICAgICAgICAgICAtIG5hbWU6IEhGX0RBVEFTRVRTX0NBQ0hFCiAgICAgICAgICAgICAgICB2YWx1ZTogInt7IC5WYWx1ZXMuZW52VmFycy5oZkRhdGFzZXRzQ2FjaGUgfX0iCiAgICAgICAgICAgICAge3stIGVuZCB9fQogICAgICAgICAgICAgIHt7LSBpZiAuVmFsdWVzLmVudlZhcnMubG9nTGV2ZWwgfX0KICAgICAgICAgICAgICAtIG5hbWU6IExPR0xFVkVMCiAgICAgICAgICAgICAgICB2YWx1ZTogInt7IC5WYWx1ZXMuZW52VmFycy5sb2dMZXZlbCB9fSIKICAgICAgICAgICAgICB7ey0gZW5kIH19CiAgICAgICAgICAgICAge3stIGlmIC5WYWx1ZXMuZW52VmFycy5jY2xXb3JrZXJDb3VudCB9fQogICAgICAgICAgICAgIC0gbmFtZTogQ0NMX1dPUktFUl9DT1VOVAogICAgICAgICAgICAgICAgdmFsdWU6ICJ7eyAuVmFsdWVzLmVudlZhcnMuY2NsV29ya2VyQ291bnQgfX0iCiAgICAgICAgICAgICAge3stIGVuZCB9fQogICAgICAgICAgICAgIHt7LSBpZiAuVmFsdWVzLnNlY3JldC5lbmNvZGVkVG9rZW59fQogICAgICAgICAgICAgIC0gbmFtZTogSFVHR0lOR19GQUNFX0hVQl9UT0tFTgogICAgICAgICAgICAgICAgdmFsdWVGcm9tOgogICAgICAgICAgICAgICAgICBzZWNyZXRLZXlSZWY6CiAgICAgICAgICAgICAgICAgICAgbmFtZToge3sgLlZhbHVlcy5tZXRhZGF0YS5uYW1lIH19LXNlY3JldAogICAgICAgICAgICAgICAgICAgIGtleTogdXNlcm5hbWUKICAgICAgICAgICAgICB7ey0gZW5kIH19CiAgICAgICAgICAgICAgcmVzb3VyY2VzOgogICAgICAgICAgICAgICAge3stIGlmIG9yIC5WYWx1ZXMucmVzb3VyY2VzLmNwdUxpbWl0IC5WYWx1ZXMucmVzb3VyY2VzLm1lbW9yeUxpbWl0IH19CiAgICAgICAgICAgICAgICBsaW1pdHM6CiAgICAgICAgICAgICAgICAgIHt7LSBpZiAuVmFsdWVzLnJlc291cmNlcy5jcHVMaW1pdCB9fQogICAgICAgICAgICAgICAgICBjcHU6IHt7IC5WYWx1ZXMucmVzb3VyY2VzLmNwdUxpbWl0IH19CiAgICAgICAgICAgICAgICAgIHt7LSBlbmQgfX0KICAgICAgICAgICAgICAgICAge3stIGlmIC5WYWx1ZXMucmVzb3VyY2VzLm1lbW9yeUxpbWl0IH19CiAgICAgICAgICAgICAgICAgIG1lbW9yeToge3sgLlZhbHVlcy5yZXNvdXJjZXMubWVtb3J5TGltaXQgfX0KICAgICAgICAgICAgICAgICAge3stIGVuZCB9fQogICAgICAgICAgICAgICAge3stIGVuZCB9fQogICAgICAgICAgICAgICAge3stIGlmIG9yIC5WYWx1ZXMucmVzb3VyY2VzLmNwdVJlcXVlc3QgLlZhbHVlcy5yZXNvdXJjZXMubWVtb3J5UmVxdWVzdCB9fQogICAgICAgICAgICAgICAgcmVxdWVzdHM6CiAgICAgICAgICAgICAgICAgIHt7LSBpZiAuVmFsdWVzLnJlc291cmNlcy5jcHVSZXF1ZXN0IH19CiAgICAgICAgICAgICAgICAgIGNwdToge3sgLlZhbHVlcy5yZXNvdXJjZXMuY3B1UmVxdWVzdCB9fQogICAgICAgICAgICAgICAgICB7ey0gZW5kIH19CiAgICAgICAgICAgICAgICAgIHt7LSBpZiAuVmFsdWVzLnJlc291cmNlcy5tZW1vcnlSZXF1ZXN0IH19CiAgICAgICAgICAgICAgICAgIG1lbW9yeToge3sgLlZhbHVlcy5yZXNvdXJjZXMubWVtb3J5UmVxdWVzdCB9fQogICAgICAgICAgICAgICAgICB7ey0gZW5kIH19CiAgICAgICAgICAgICAgICB7ey0gZW5kIH19CiAgICAgICAgICAgICAgdm9sdW1lTW91bnRzOgogICAgICAgICAgICAgIC0gbmFtZTogb3V0cHV0LWRpcgogICAgICAgICAgICAgICAgbW91bnRQYXRoOiB7eyAuVmFsdWVzLnN0b3JhZ2UucHZjTW91bnRQYXRoIH19CiAgICAgICAgICAgICAgLSBtb3VudFBhdGg6IC9kZXYvc2htCiAgICAgICAgICAgICAgICBuYW1lOiBkc2htCiAgICAgICAgICByZXN0YXJ0UG9saWN5OiBOZXZlcgogICAgICAgICAge3stIGlmIC5WYWx1ZXMucmVzb3VyY2VzLm5vZGVTZWxlY3RvckxhYmVsIH19CiAgICAgICAgICBub2RlU2VsZWN0b3I6CiAgICAgICAgICAgIHt7IC5WYWx1ZXMucmVzb3VyY2VzLm5vZGVTZWxlY3RvckxhYmVsIH19OiB7eyAuVmFsdWVzLnJlc291cmNlcy5ub2RlU2VsZWN0b3JWYWx1ZSB9fQogICAgICAgICAge3stIGVuZCB9fQogICAgICAgICAgdm9sdW1lczoKICAgICAgICAgIC0gbmFtZTogb3V0cHV0LWRpcgogICAgICAgICAgICBwZXJzaXN0ZW50Vm9sdW1lQ2xhaW06CiAgICAgICAgICAgICAgY2xhaW1OYW1lOiB7eyAuVmFsdWVzLm1ldGFkYXRhLm5hbWUgfX0tcHZjCiAgICAgICAgICAtIG5hbWU6IGRzaG0KICAgICAgICAgICAgZW1wdHlEaXI6CiAgICAgICAgICAgICAgbWVkaXVtOiBNZW1vcnkK
+    name: templates/pytorchjob.yaml
+  - data: IyBDb3B5cmlnaHQgKGMpIDIwMjMgSW50ZWwgQ29ycG9yYXRpb24KIwojIExpY2Vuc2VkIHVuZGVyIHRoZSBBcGFjaGUgTGljZW5zZSwgVmVyc2lvbiAyLjAgKHRoZSAiTGljZW5zZSIpOwojIHlvdSBtYXkgbm90IHVzZSB0aGlzIGZpbGUgZXhjZXB0IGluIGNvbXBsaWFuY2Ugd2l0aCB0aGUgTGljZW5zZS4KIyBZb3UgbWF5IG9idGFpbiBhIGNvcHkgb2YgdGhlIExpY2Vuc2UgYXQKIwojICAgIGh0dHA6Ly93d3cuYXBhY2hlLm9yZy9saWNlbnNlcy9MSUNFTlNFLTIuMAojCiMgVW5sZXNzIHJlcXVpcmVkIGJ5IGFwcGxpY2FibGUgbGF3IG9yIGFncmVlZCB0byBpbiB3cml0aW5nLCBzb2Z0d2FyZQojIGRpc3RyaWJ1dGVkIHVuZGVyIHRoZSBMaWNlbnNlIGlzIGRpc3RyaWJ1dGVkIG9uIGFuICJBUyBJUyIgQkFTSVMsCiMgV0lUSE9VVCBXQVJSQU5USUVTIE9SIENPTkRJVElPTlMgT0YgQU5ZIEtJTkQsIGVpdGhlciBleHByZXNzIG9yIGltcGxpZWQuCiMgU2VlIHRoZSBMaWNlbnNlIGZvciB0aGUgc3BlY2lmaWMgbGFuZ3VhZ2UgZ292ZXJuaW5nIHBlcm1pc3Npb25zIGFuZAojIGxpbWl0YXRpb25zIHVuZGVyIHRoZSBMaWNlbnNlLgojCiMgU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IEFwYWNoZS0yLjAKCgp7ey0gaWYgLlZhbHVlcy5zZWNyZXQuZW5jb2RlZFRva2VufX0KYXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IHt7IC5WYWx1ZXMubWV0YWRhdGEubmFtZSB9fS1zZWNyZXQKdHlwZToga3ViZXJuZXRlcy5pby9iYXNpYy1hdXRoICAjIE9wYXF1ZQpkYXRhOgogIHVzZXJuYW1lOiB7eyAuVmFsdWVzLnNlY3JldC5lbmNvZGVkVG9rZW4gfX0Ke3stIGVuZCB9fQo=
+    name: templates/secret.yaml
+  values:
+    distributed:
+      benchmark:
+        coresPerInstance: -1
+        iterations: 300
+        numInstances: 1
+        warmup: 30
+      doBenchmark: false
+      doEval: true
+      doQuantize: false
+      doTrain: true
+      eval:
+        perDeviceBatchSize: 8
+        validationSplitPercentage: 0.2
+      logLevel: info
+      modelNameOrPath: meta-llama/Llama-2-7b-chat-hf
+      quantize:
+        outputDir: /tmp/pvc-mount/output/quantized_model
+        peftModelDir: /tmp/pvc-mount/output/saved_model
+        woqAlgo: RTN
+        woqBits: 8
+        woqGroupSize: -1
+        woqScheme: sym
+      script: /workspace/scripts/finetune.py
+      train:
+        bf16: true
+        dataFile: null
+        datasetConcatenation: true
+        datasetName: null
+        ddpBackend: ccl
+        ddpFindUnusedParameters: false
+        epochs: 3
+        gradientAccumulationSteps: 1
+        learningRate: 2e-05
+        loggingSteps: 10
+        loraAlpha: 16
+        loraDropout: 0.1
+        loraRank: 8
+        loraTargetModules: q_proj vproj
+        maxSteps: -1
+        noCuda: true
+        outputDir: /tmp/pvc-mount/output/saved_model
+        overwriteOutputDir: true
+        perDeviceBatchSize: 8
+        promptWithInput: Below is an instruction that describes a task, paired with
+          an input that provides further context. Write a response that appropriately
+          completes the request.
+        promptWithoutInput: Below is an instruction that describes a task. Write a
+          response that appropriately completes the request.
+        saveStrategy: epoch
+        saveTotalLimit: 2
+        useFastTokenizer: false
+        useIpex: true
+        useLora: true
+      workers: 4
+    elasticPolicy:
+      maxReplicas: 4
+      maxRestarts: 10
+      minReplicas: 1
+      rdzvBackend: c10d
+    envVars:
+      cclWorkerCount: 1
+      ftpProxy: null
+      hfDatasetsCache: /tmp/pvc-mount/hf_dataset_cache
+      httpProxy: null
+      httpsProxy: null
+      ldPreload: /usr/lib/x86_64-linux-gnu/libtcmalloc.so.4.5.9:/usr/local/lib/libiomp5.so
+      logLevel: INFO
+      noProxy: null
+      socksProxy: null
+      transformersCache: /tmp/pvc-mount/transformers_cache
+    image:
+      name: intel/ai-workflows
+      pullPolicy: IfNotPresent
+      tag: torch-2.0.1-huggingface-multinode-py3.9
+    metadata:
+      name: distributed-llama2
+      namespace: kubeflow
+    resources:
+      cpuLimit: null
+      cpuRequest: null
+      memoryLimit: null
+      memoryRequest: null
+      nodeSelectorLabel: null
+      nodeSelectorValue: null
+    secret:
+      encodedToken: null
+    storage:
+      pvcMountPath: /tmp/pvc-mount
+      resources: 50Gi
+      storageClassName: nfs-client
+config:
+  distributed:
+    benchmark:
+      coresPerInstance: -1
+      iterations: 300
+      numInstances: 1
+      warmup: 30
+    doBenchmark: false
+    doEval: true
+    doQuantize: false
+    doTrain: true
+    eval:
+      perDeviceBatchSize: 8
+      validationSplitPercentage: 0.2
+    logLevel: info
+    modelNameOrPath: meta-llama/Llama-2-7b-hf
+    quantize:
+      outputDir: /tmp/pvc-mount/output/quantized_model
+      peftModelDir: /tmp/pvc-mount/output/saved_model
+      woqAlgo: RTN
+      woqBits: 8
+      woqGroupSize: -1
+      woqScheme: sym
+    script: /workspace/scripts/finetune.py
+    train:
+      bf16: true
+      dataFile: null
+      datasetConcatenation: true
+      datasetName: medalpaca/medical_meadow_medical_flashcards
+      ddpBackend: ccl
+      ddpFindUnusedParameters: false
+      epochs: 3
+      gradientAccumulationSteps: 1
+      learningRate: 2e-05
+      loggingSteps: 10
+      loraAlpha: 16
+      loraDropout: 0.1
+      loraRank: 8
+      loraTargetModules: q_proj vproj
+      maxSteps: -1
+      noCuda: true
+      outputDir: /tmp/pvc-mount/output/saved_model
+      overwriteOutputDir: true
+      perDeviceBatchSize: 8
+      promptWithInput: Below is an instruction that describes a task, paired with
+        an input that provides further context. Write a response that appropriately
+        completes the request.
+      promptWithoutInput: Below is an instruction that describes a task. Write a response
+        that appropriately completes the request.
+      saveStrategy: epoch
+      saveTotalLimit: 2
+      useFastTokenizer: false
+      useIpex: true
+      useLora: true
+    workers: 4
+  elasticPolicy:
+    maxReplicas: 4
+    maxRestarts: 30
+    minReplicas: 1
+    rdzvBackend: c10d
+  envVars:
+    cclWorkerCount: 1
+    ftpProxy: null
+    hfDatasetsCache: /tmp/pvc-mount/hf_dataset_cache
+    httpProxy: null
+    httpsProxy: null
+    ldPreload: /usr/lib/x86_64-linux-gnu/libtcmalloc.so.4.5.9:/usr/local/lib/libiomp5.so
+    logLevel: INFO
+    noProxy: null
+    socksProxy: null
+    transformersCache: /tmp/pvc-mount/transformers_cache
+  image:
+    name: intel/ai-workflows
+    pullPolicy: IfNotPresent
+    tag: torch-2.0.1-huggingface-multinode-py3.9
+  metadata:
+    name: medical-meadow
+    namespace: kubeflow
+  resources:
+    cpuLimit: 200
+    cpuRequest: 200
+    memoryLimit: 226Gi
+    memoryRequest: 226Gi
+    nodeSelectorLabel: node-type
+    nodeSelectorValue: spr
+  secret:
+    encodedToken: null
+  storage:
+    pvcMountPath: /tmp/pvc-mount
+    resources: 50Gi
+    storageClassName: nfs-client
+info:
+  deleted: ""
+  description: Dry run complete
+  first_deployed: "2024-02-22T16:48:24.1279833-05:00"
+  last_deployed: "2024-02-22T16:48:24.1279833-05:00"
+  status: pending-install
+manifest: |
+  ---
+  # Source: Hugging Face PyTorch Distributed Training/templates/pvc.yaml
+  # Copyright (c) 2023 Intel Corporation
+  #
+  # Licensed under the Apache License, Version 2.0 (the "License");
+  # you may not use this file except in compliance with the License.
+  # You may obtain a copy of the License at
+  #
+  #    http://www.apache.org/licenses/LICENSE-2.0
+  #
+  # Unless required by applicable law or agreed to in writing, software
+  # distributed under the License is distributed on an "AS IS" BASIS,
+  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  # See the License for the specific language governing permissions and
+  # limitations under the License.
+  #
+  # SPDX-License-Identifier: Apache-2.0
+
+
+  apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    name: medical-meadow-pvc
+    namespace: kubeflow
+  spec:
+    storageClassName: nfs-client
+    accessModes:
+      - "ReadWriteMany"
+    resources:
+      requests:
+        storage: 50Gi
+  ---
+  # Source: Hugging Face PyTorch Distributed Training/templates/dataaccess.yaml
+  # Copyright (c) 2023 Intel Corporation
+  #
+  # Licensed under the Apache License, Version 2.0 (the "License");
+  # you may not use this file except in compliance with the License.
+  # You may obtain a copy of the License at
+  #
+  #    http://www.apache.org/licenses/LICENSE-2.0
+  #
+  # Unless required by applicable law or agreed to in writing, software
+  # distributed under the License is distributed on an "AS IS" BASIS,
+  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  # See the License for the specific language governing permissions and
+  # limitations under the License.
+  #
+  # SPDX-License-Identifier: Apache-2.0
+
+
+  apiVersion: v1
+  kind: Pod
+  metadata:
+    name: medical-meadow-dataaccess
+  spec:
+    containers:
+    - name: alpine
+      image: alpine:latest
+      command: ['sleep', 'infinity']
+      env:
+        - name: LD_PRELOAD
+          value: "/usr/lib/x86_64-linux-gnu/libtcmalloc.so.4.5.9:/usr/local/lib/libiomp5.so"
+        - name: http_proxy
+          value: ""
+        - name: https_proxy
+          value: ""
+        - name: no_proxy
+          value: ""
+        - name: ftp_proxy
+          value: ""
+        - name: socks_proxy
+          value: ""
+      volumeMounts:
+      - name: pvc-volume
+        mountPath: /tmp/pvc-mount
+    volumes:
+    - name: pvc-volume
+      persistentVolumeClaim:
+        claimName: medical-meadow-pvc
+  ---
+  # Source: Hugging Face PyTorch Distributed Training/templates/secret.yaml
+  # Copyright (c) 2023 Intel Corporation
+  #
+  # Licensed under the Apache License, Version 2.0 (the "License");
+  # you may not use this file except in compliance with the License.
+  # You may obtain a copy of the License at
+  #
+  #    http://www.apache.org/licenses/LICENSE-2.0
+  #
+  # Unless required by applicable law or agreed to in writing, software
+  # distributed under the License is distributed on an "AS IS" BASIS,
+  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  # See the License for the specific language governing permissions and
+  # limitations under the License.
+  #
+  # SPDX-License-Identifier: Apache-2.0
+  ---
+  # Source: Hugging Face PyTorch Distributed Training/templates/pytorchjob.yaml
+  # Copyright (c) 2023 Intel Corporation
+  #
+  # Licensed under the Apache License, Version 2.0 (the "License");
+  # you may not use this file except in compliance with the License.
+  # You may obtain a copy of the License at
+  #
+  #    http://www.apache.org/licenses/LICENSE-2.0
+  #
+  # Unless required by applicable law or agreed to in writing, software
+  # distributed under the License is distributed on an "AS IS" BASIS,
+  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  # See the License for the specific language governing permissions and
+  # limitations under the License.
+  #
+  # SPDX-License-Identifier: Apache-2.0
+
+
+  apiVersion: "kubeflow.org/v1"
+  kind: PyTorchJob
+  metadata:
+    name: medical-meadow-pytorchjob
+    namespace: kubeflow
+  spec:
+    elasticPolicy:
+      rdzvBackend: c10d
+      minReplicas: 1
+      maxReplicas: 4
+      maxRestarts: 30
+    pytorchReplicaSpecs:
+      Worker:
+        replicas: 4
+        restartPolicy: OnFailure
+        template:
+          spec:
+            containers:
+              - name: pytorch
+                image: intel/ai-workflows:torch-2.0.1-huggingface-multinode-py3.9
+                imagePullPolicy: IfNotPresent
+                command:
+                  - torchrun
+                  - /workspace/scripts/finetune.py
+                  - --model_name_or_path
+                  - "meta-llama/Llama-2-7b-hf"
+                  - --dataset_name
+                  - "medalpaca/medical_meadow_medical_flashcards"
+                  - --dataset_cache_directory
+                  - "/tmp/pvc-mount/hf_dataset_cache"
+                  - --train_file
+                  - ""
+                  - --dataset_concatenation
+                  - "true"
+                  - --prompt_with_input
+                  - "Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request."
+                  - --prompt_without_input
+                  - "Below is an instruction that describes a task. Write a response that appropriately completes the request."
+                  - --per_device_train_batch_size
+                  - "8"
+                  - --per_device_eval_batch_size
+                  - "8"
+                  - --gradient_accumulation_steps
+                  - "1"
+                  - --learning_rate
+                  - "2e-05"
+                  - --num_train_epochs
+                  - "3"
+                  - --max_steps
+                  - "-1"
+                  - --logging_steps
+                  - "10"
+                  - --save_total_limit
+                  - "2"
+                  - --output_dir
+                  - "/tmp/pvc-mount/output/saved_model"
+                  - --validation_split_percentage
+                  - "0.2"
+                  - --log_level
+                  - "info"
+                  - --save_strategy
+                  - "epoch"
+                  - --ddp_find_unused_parameters
+                  - "false"
+                  - --ddp_backend
+                  - "ccl"
+                  - --use_fast_tokenizer
+                  - "false"
+                  - --use_lora
+                  - "true"
+                  - --lora_rank
+                  - "8"
+                  - --lora_alpha
+                  - "16"
+                  - --lora_dropout
+                  - "0.1"
+                  - --lora_target_modules
+                  - "q_proj vproj"
+                  - --no_cuda
+                  - "true"
+                  - --overwrite_output_dir
+                  - "true"
+                  - --do_train
+                  - "true"
+                  - --do_eval
+                  - "true"
+                  - --bf16
+                  - "true"
+                  - --use_ipex
+                  - "true"
+                  - --do_benchmark
+                  - "false"
+                  - --benchmark_warmup
+                  - "30"
+                  - --benchmark_iterations
+                  - "300"
+                  - --benchmark_cores_per_instance
+                  - "-1"
+                  - --benchmark_num_instances
+                  - "1"
+                  - --do_quantize
+                  - "false"
+                  - --peft_model_dir
+                  - "/tmp/pvc-mount/output/saved_model"
+                  - --quantize_output_dir
+                  - "/tmp/pvc-mount/output/quantized_model"
+                  - --woq_bits
+                  - "8"
+                  - --woq_group_size
+                  - "-1"
+                  - --woq_scheme
+                  - "sym"
+                  - --woq_algo
+                  - "RTN"
+                env:
+                - name: LD_PRELOAD
+                  value: "/usr/lib/x86_64-linux-gnu/libtcmalloc.so.4.5.9:/usr/local/lib/libiomp5.so"
+                - name: TRANSFORMERS_CACHE
+                  value: "/tmp/pvc-mount/transformers_cache"
+                - name: HF_DATASETS_CACHE
+                  value: "/tmp/pvc-mount/hf_dataset_cache"
+                - name: LOGLEVEL
+                  value: "INFO"
+                - name: CCL_WORKER_COUNT
+                  value: "1"
+                resources:
+                  limits:
+                    cpu: 200
+                    memory: 226Gi
+                  requests:
+                    cpu: 200
+                    memory: 226Gi
+                volumeMounts:
+                - name: output-dir
+                  mountPath: /tmp/pvc-mount
+                - mountPath: /dev/shm
+                  name: dshm
+            restartPolicy: Never
+            nodeSelector:
+              node-type: spr
+            volumes:
+            - name: output-dir
+              persistentVolumeClaim:
+                claimName: medical-meadow-pvc
+            - name: dshm
+              emptyDir:
+                medium: Memory
+name: llama2-distributed
+namespace: kubeflow
+version: 1
